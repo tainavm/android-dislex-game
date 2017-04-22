@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/question_1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/operation"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/btnResp1"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:backgroundTint="@color/greyDark"
+            android:text="@string/op_1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnResp2"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:backgroundTint="@color/greyDark"
+            android:text="@string/op_2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnResp3"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:backgroundTint="@color/greyDark"
+            android:text="@string/op_3"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnResp4"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:backgroundTint="@color/greyDark"
+            android:text="@string/op_4"
+            android:textSize="20sp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:text="Próxima"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

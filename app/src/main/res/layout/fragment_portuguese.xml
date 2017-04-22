@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/question_2"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/btnQues1"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="@string/qt_1"
+            android:backgroundTint="@color/greyDark" />
+
+        <Button
+            android:id="@+id/btnQues2"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:text="@string/qt_2"
+            android:backgroundTint="@color/greyDark" />
+
+        <Button
+            android:id="@+id/btnQues3"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="@string/qt_3"
+            android:backgroundTint="@color/greyDark" />
+
+        <Button
+            android:id="@+id/btnQues4"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:text="@string/qt_4"
+            android:backgroundTint="@color/greyDark" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/text3"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Escreva aqui"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:text="Próxima"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Dislex</string>
+
+    <!--WELCOME-->
+    <string name="text_welcome">Bem vindo ao Dislex, um jogo para te ajudar a aprender. Vamos começar?</string>
+    <string name="text_welcome2">Tudo pronto para começar! Bem vindo ao NÍVEL 1. Está preparado? Aperte JOGAR e vamos nessa</string>
+    <string name="btn_play">Conectar Sphero</string>
+    <string name="btn_tuto">Tutorial</string>
+
+    <!--TUTORIAL-->
+    <string name="text_tuto">Para jogar é preciso ter a Sphero Color Wheel. Peça para um adulto te ajudar.</string>
+    <string name="tuto1">Para os adultos:</string>
+    <string name="tuto2">Certifique-se que a Sphero está conectada. Caso não esteja vá nas configurações
+    bluetooth e se conecte a Sphero.</string>
+    <string name="tuto3">Como funciona o jogo?</string>
+    <string name="tuto4">O jogo é dividido em níveis, com 5 perguntas cada. Quando a criança acerta todas ela passa de nível, somando uma pontuação
+    que será exibida no final de cada nível</string>
+    <string name="tuto5">Qual o objetivo do jogo?</string>
+    <string name="tuto6">O jogo tem como objetivo ajudar as crianças com dificuldades de aprendizagem, com perguntas relevantes para
+    que ela desenvolva melhor áreas como linguagem e visual.</string>
+    <string name="title_activity_game">GameActivity</string>
+
+    <!-- GAME -->
+
+    <!-- COLORS-->
+    <string name="text">Qual cor está mostrando na Sphero?</string>
+    <string name="text2">Como se escreve essa cor?</string>
+    <string name="color_red">Vermelho</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_yellow">Amarelo</string>
+    <string name="color_orange">Rosa</string>
+    <string name="color_purple">Roxo</string>
+    <string name="color_green">Verde</string>
+
+    <!-- QUESTIONS -->
+    <string name="question_1">Qual a resposta dessa conta?</string>
+    <string name="operation"> 5 + 13 = </string>
+    <string name="op_1">8</string>
+    <string name="op_2">12</string>
+    <string name="op_3">18</string>
+    <string name="op_4">20</string>
+    <string name="question_2">Qual palavra está escrito errada?</string>
+    <string name="text3">Como se escreve essa palavra corretamente?</string>
+    <string name="qt_1">Passáro</string>
+    <string name="qt_2">Macaco</string>
+    <string name="qt_3">Aranha</string>
+    <string name="qt_4">Polvu</string>
+    <string name="text4">Guarde a posição do elefante.</string>
+    <string name="text10">Você lembra onde o elefante estava?</string>
+
+    <!-- MOVE -->
+    <string name="text5">Vamos controlar a Sphero? Faça os seguintes movimentos:</string>
+    <string name="text6">Dirija para a direita</string>
+    <string name="text7">Esquerda</string>
+    <string name="text8">Cima</string>
+    <string name="text9">Baixo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
