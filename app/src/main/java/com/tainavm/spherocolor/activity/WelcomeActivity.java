@@ -35,7 +35,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         // Chama a tela de Tutorial quando clica
-        Button btnTuto = (Button) findViewById(R.id.btn_tuto);
+        Button btnTuto = (Button) findViewById(R.id.btnVoltar);
         btnTuto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

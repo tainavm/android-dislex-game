@@ -75,7 +75,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/rightText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

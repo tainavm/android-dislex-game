@@ -22,8 +22,14 @@
 
     <!-- GAME -->
 
+    <!--DIALOG-->
+    <string name="dialog_message">Resposta errada. Tente novamente</string>
+    <string name="dialog_title">OOPS!</string>
+    <string name="dialog_title2">Em breve!</string>
+    <string name="dialog_message2">Um novo nível estará disponivel em breve</string>
+
     <!-- COLORS-->
-    <string name="text">Qual cor está mostrando na Sphero?</string>
+    <string name="text">Qual a cor está mostrando na Sphero?</string>
     <string name="text2">Como se escreve essa cor?</string>
     <string name="color_red">Vermelho</string>
     <string name="color_blue">Azul</string>
@@ -34,11 +40,11 @@
 
     <!-- QUESTIONS -->
     <string name="question_1">Qual a resposta dessa conta?</string>
-    <string name="operation"> 5 + 13 = </string>
-    <string name="op_1">8</string>
-    <string name="op_2">12</string>
-    <string name="op_3">18</string>
-    <string name="op_4">20</string>
+    <string name="operation"> 27 + 16 = </string>
+    <string name="op_1">78</string>
+    <string name="op_2">43</string>
+    <string name="op_3">36</string>
+    <string name="op_4">57</string>
     <string name="question_2">Qual palavra está escrito errada?</string>
     <string name="text3">Como se escreve essa palavra corretamente?</string>
     <string name="qt_1">Passáro</string>

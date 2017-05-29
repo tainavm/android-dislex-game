@@ -33,7 +33,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imgUp"
+            android:id="@+id/btnUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/up" />
@@ -45,14 +45,14 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imgLeft"
+                android:id="@+id/btnLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="50dp"
                 app:srcCompat="@drawable/left" />
 
             <ImageView
-                android:id="@+id/imgRight"
+                android:id="@+id/btnRight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/right" />
@@ -60,7 +60,7 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imgDown"
+            android:id="@+id/btnDown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/down" />

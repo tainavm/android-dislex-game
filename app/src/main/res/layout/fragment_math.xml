@@ -92,7 +92,8 @@
             android:layout_gravity="bottom"
             android:background="@color/colorPrimaryDark"
             android:text="Próxima"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
 
     </LinearLayout>
 

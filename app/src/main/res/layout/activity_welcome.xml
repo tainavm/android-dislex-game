@@ -22,13 +22,13 @@
 
     <ImageView
         android:id="@+id/imgPuzzle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_below="@+id/tv_welcome"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ic_puzzle"
+        app:srcCompat="@drawable/ic_sphero"
         tools:layout_editor_absoluteX="128dp"
         tools:layout_editor_absoluteY="125dp" />
 
@@ -43,8 +43,8 @@
             android:id="@+id/btn_play"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/btn_tuto"
-            android:layout_alignStart="@+id/btn_tuto"
+            android:layout_above="@+id/btnVoltar"
+            android:layout_alignStart="@+id/btnVoltar"
             android:layout_marginTop="30dp"
             android:background="@color/colorPrimaryDark"
             android:text="@string/btn_play"
@@ -53,7 +53,7 @@
             tools:layout_editor_absoluteY="309dp" />
 
         <Button
-            android:id="@+id/btn_tuto"
+            android:id="@+id/btnVoltar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

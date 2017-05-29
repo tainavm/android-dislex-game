@@ -9,6 +9,7 @@ import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,10 +55,13 @@ public class ColorsFragment extends Fragment {
         btnColorBlue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Muda a cor do botao para cinza
-                btnColorBlue.setBackgroundColor(getResources().getColor(R.color.greyDark));
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorBlue));
+                if(colorIsRight){
+                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                } else {
+                    setDialog();
+                }
             }
         });
 
@@ -65,10 +69,13 @@ public class ColorsFragment extends Fragment {
         btnColorGreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Muda a cor do botao para cinza
-                btnColorGreen.setBackgroundColor(getResources().getColor(R.color.greyDark));
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorGreen));
+                if(colorIsRight){
+                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                } else {
+                    setDialog();
+                }
 
             }
         });
@@ -77,10 +84,13 @@ public class ColorsFragment extends Fragment {
         btnColorPink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Muda a cor do botao para cinza
-                btnColorPink.setBackgroundColor(getResources().getColor(R.color.greyDark));
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorPink));
+                if(colorIsRight){
+                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                } else {
+                    setDialog();
+                }
             }
         });
 
@@ -88,10 +98,13 @@ public class ColorsFragment extends Fragment {
         btnColorPurple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Muda a cor do botao para cinza
-                btnColorPurple.setBackgroundColor(getResources().getColor(R.color.greyDark));
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorPurple));
+                if(colorIsRight){
+                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                } else {
+                    setDialog();
+                }
             }
         });
 
@@ -99,10 +112,13 @@ public class ColorsFragment extends Fragment {
         btnColorYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Muda a cor do botao para cinza
-                btnColorYellow.setBackgroundColor(getResources().getColor(R.color.greyDark));
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorYellow));
+                if(colorIsRight){
+                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                } else {
+                    setDialog();
+                }
             }
         });
 
@@ -110,10 +126,13 @@ public class ColorsFragment extends Fragment {
         btnColorRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Muda a cor do botao para cinza
-                btnColorRed.setBackgroundColor(getResources().getColor(R.color.greyDark));
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorRed));
+                if(colorIsRight){
+                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                } else {
+                    setDialog();
+                }
             }
         });
 
@@ -128,7 +147,7 @@ public class ColorsFragment extends Fragment {
                     // Coloca a bolinha verde
                     setSpheroColor(getResources().getColor(R.color.colorGreen));
                     // Faz a bolinha girar
-                    mRobot.drive(180, 0);
+                    mRobot.drive(360, 1);
                     // Muda para a proxima questao
                     MathFragment mathFragment = new MathFragment(mRobot);
                     getFragmentManager()
@@ -140,9 +159,10 @@ public class ColorsFragment extends Fragment {
                     // Se estiver errado coloca a bolinha vermelha
                     setSpheroColor(getResources().getColor(R.color.colorRed));
                     // Faz a bolinha girar
-                    mRobot.drive(180, 0);
+                    mRobot.drive(360, 1);
+                    setDialog();
                     // Avisa o jogador que esta errado
-                    Toast.makeText(getContext(), "Errado! Tente novamente", Toast.LENGTH_SHORT).show();
+                  //  Toast.makeText(getContext(), "Errado! Tente novamente", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -174,9 +194,7 @@ public class ColorsFragment extends Fragment {
         int color = 0;
 
         // Gera numero aleatorio
-        while (lastColor == num) {
-            num = (int) (Math.random() * 5);
-        }
+        num = (int) (Math.random() * 5);
 
         if (num == 0) {
             color = getResources().getColor(R.color.colorGreen);
@@ -237,6 +255,14 @@ public class ColorsFragment extends Fragment {
         }
 
         return textCorrect;
+    }
+
+    public void setDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setMessage(R.string.dialog_message)
+                .setTitle(R.string.dialog_title);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
 }
