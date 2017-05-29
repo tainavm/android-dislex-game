@@ -11,9 +11,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_puzzle"
+        android:icon="@drawable/ic_oficial"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_small"
+        android:roundIcon="@drawable/ic_oficial"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.WelcomeActivity">
