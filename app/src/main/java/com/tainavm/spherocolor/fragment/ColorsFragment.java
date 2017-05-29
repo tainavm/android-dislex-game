@@ -57,8 +57,8 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorBlue));
-                if(colorIsRight){
-                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                if (colorIsRight) {
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -71,8 +71,8 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorGreen));
-                if(colorIsRight){
-                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                if (colorIsRight) {
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -86,8 +86,8 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorPink));
-                if(colorIsRight){
-                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                if (colorIsRight) {
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -100,8 +100,8 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorPurple));
-                if(colorIsRight){
-                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                if (colorIsRight) {
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -114,8 +114,8 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorYellow));
-                if(colorIsRight){
-                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                if (colorIsRight) {
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -128,8 +128,8 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorRed));
-                if(colorIsRight){
-                    Toast.makeText(getContext(),"Acertou", Toast.LENGTH_SHORT).show();
+                if (colorIsRight) {
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -162,7 +162,7 @@ public class ColorsFragment extends Fragment {
                     mRobot.drive(360, 1);
                     setDialog();
                     // Avisa o jogador que esta errado
-                  //  Toast.makeText(getContext(), "Errado! Tente novamente", Toast.LENGTH_SHORT).show();
+                    //  Toast.makeText(getContext(), "Errado! Tente novamente", Toast.LENGTH_SHORT).show();
                 }
 
             }

@@ -216,34 +216,6 @@ public class Colors2Fragment extends Fragment {
                 }
             }
         });
-//
-//        btnNext = (Button) view.findViewById(R.id.btn_next);
-//        btnNext.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (colorIsRight) {
-//                    // Coloca a bolinha verde
-//                    setSpheroColor(getResources().getColor(R.color.colorGreen));
-//                    // Faz a bolinha girar
-//                    mRobot.drive(360, 0);
-//
-//                    // Muda para proxima questao
-//                    PortugueseFragment portugueseFragment = new PortugueseFragment(mRobot);
-//                    getFragmentManager()
-//                            .beginTransaction()
-//                            .replace(R.id.fragment_container, portugueseFragment)
-//                            .addToBackStack(null)
-//                            .commit();
-//                } else {
-//                    // Se estiver errado coloca a bolinha vermelha
-//                    setSpheroColor(getResources().getColor(R.color.colorRed));
-//                    // Faz a bolinha girar
-//                    mRobot.drive(360, 0);
-//                    // Avisa o jogador que esta errado
-//                    setDialog();
-//                }
-//            }
-//        });
 
         return view;
     }

@@ -47,7 +47,7 @@ public class PortugueseFragment extends Fragment {
             public void onClick(View v) {
                 if (btnQuest1.getText().toString().equals("Polvu")) {
                     isCorrect = true;
-                    Toast.makeText(getContext(),"Acertou",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -61,7 +61,7 @@ public class PortugueseFragment extends Fragment {
             public void onClick(View v) {
                 if (btnQuest2.getText().toString().equals("Polvu")) {
                     isCorrect = true;
-                    Toast.makeText(getContext(),"Acertou",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -74,7 +74,7 @@ public class PortugueseFragment extends Fragment {
             public void onClick(View v) {
                 if (btnQuest3.getText().toString().equals("Polvu")) {
                     isCorrect = true;
-                    Toast.makeText(getContext(),"Acertou",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -87,7 +87,7 @@ public class PortugueseFragment extends Fragment {
             public void onClick(View v) {
                 if (btnQuest4.getText().toString().equals("Polvu")) {
                     isCorrect = true;
-                    Toast.makeText(getContext(),"Acertou",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
                 } else {
                     setDialog();
                 }
@@ -108,7 +108,7 @@ public class PortugueseFragment extends Fragment {
                     // Faz a bolinha girar
                     mRobot.drive(360, 1);
 
-                    Toast.makeText(getContext(),"Acertou",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
 
                     // Muda para proxima questao
                     DriveFragment driveFragment = new DriveFragment(mRobot);
