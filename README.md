@@ -1,5 +1,5 @@
 #  Dislex Game
-Jogo para crianças com dificuldade de aprendizado utilizando uma Sphero Color Wheel.
+Jogo para crianças em Android com dificuldade de aprendizado utilizando uma Sphero Color Wheel
 
 ## Funcionamento do Jogo
 
@@ -9,8 +9,16 @@ Jogo para crianças com dificuldade de aprendizado utilizando uma Sphero Color W
 * Assimilar direções 
 
 ## Conexão com a Sphero
-* Em todos os níveis do jogo a criança terá de reconhecer a cor que estiver na Sphero e assimilar com as que estiverem no jogo
-* Cada acerto a Sphero acende e gira
+Em todos os níveis do jogo a criança terá de reconhecer a cor que estiver na Sphero e assimilar com as que estiverem no jogo
+
+Cada acerto a Sphero acende e gira
+```
 Verde - Correto
 Vermelho - Errado
-* A criança deve realizar os movimentos solicitados no jogo como direita e esquerda. E reconhecer esses movimentos da sphero.
+```
+
+A criança deve realizar os movimentos solicitados no jogo como direita e esquerda. E reconhecer esses movimentos da sphero.
+
+## Author
+
+* **Tainá Viriato Mendes** - *Initial work* - [tainavm](https://github.com/tainavm)
