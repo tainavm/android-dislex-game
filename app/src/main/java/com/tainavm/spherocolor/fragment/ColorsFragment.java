@@ -57,10 +57,15 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorBlue));
+                String text = rightColor.getText().toString();
                 if (colorIsRight) {
                     Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
+
                 } else {
                     setDialog();
+                }
+                if (text.equals("azul") || text.equals("Azul")) {
+                    textCorrect = true;
                 }
             }
         });
@@ -71,10 +76,15 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorGreen));
+                String text = rightColor.getText().toString();
                 if (colorIsRight) {
                     Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
+
                 } else {
                     setDialog();
+                }
+                if (text.equals("verde") || text.equals("Verde")) {
+                    textCorrect = true;
                 }
 
             }
@@ -86,10 +96,15 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorPink));
+                String text = rightColor.getText().toString();
                 if (colorIsRight) {
                     Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
+
                 } else {
                     setDialog();
+                }
+                if (text.equals("rosa") || text.equals("Rosa")) {
+                    textCorrect = true;
                 }
             }
         });
@@ -100,10 +115,15 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorPurple));
+                String text = rightColor.getText().toString();
                 if (colorIsRight) {
                     Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
+
                 } else {
                     setDialog();
+                }
+                if (text.equals("Roxo") || text.equals("roxo")) {
+                    textCorrect = true;
                 }
             }
         });
@@ -114,10 +134,15 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorYellow));
+                String text = rightColor.getText().toString();
                 if (colorIsRight) {
                     Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
+
                 } else {
                     setDialog();
+                }
+                if (text.equals("amarelo") || text.equals("Amarelo")) {
+                    textCorrect = true;
                 }
             }
         });
@@ -128,10 +153,15 @@ public class ColorsFragment extends Fragment {
             public void onClick(View v) {
                 // Verifica se a cor da bolinha e a cor do botao
                 colorIsRight = verifyColor(getResources().getColor(R.color.colorRed));
+                String text = rightColor.getText().toString();
                 if (colorIsRight) {
                     Toast.makeText(getContext(), "Acertou", Toast.LENGTH_SHORT).show();
+
                 } else {
                     setDialog();
+                }
+                if (text.equals("Vermelho") || text.equals("vermelho")) {
+                    textCorrect = true;
                 }
             }
         });
@@ -142,7 +172,7 @@ public class ColorsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Se a cor selecionada for igual a da bolinha e o texto digitado estiver certo
-                textCorrect = textIsCorret();
+             //   textCorrect = textIsCorret();
                 if (colorIsRight && textCorrect) {
                     // Coloca a bolinha verde
                     setSpheroColor(getResources().getColor(R.color.colorGreen));
